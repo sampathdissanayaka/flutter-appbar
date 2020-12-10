@@ -43,15 +43,17 @@ class MyHomePage extends StatelessWidget {
               onPressed: (){},
             ),
           ],
-          flexibleSpace: Image.asset("assets/ab.jpg",
-            fit: BoxFit.cover,),
+          //flexibleSpace: Image.asset("assets/ab.jpg",
+            //fit: BoxFit.cover,),
           bottom: TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.directions_car),text: "tab01",),
               Tab(icon: Icon(Icons.directions_transit)),
               Tab(icon: Icon(Icons.directions_bike)),
             ],
           ),
+          elevation: 5.0,
+          backgroundColor: Colors.pink,
         ),
         body: TabBarView(
           children: [
